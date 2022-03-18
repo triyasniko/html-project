@@ -1,9 +1,9 @@
 # html-project
 ### Pembagian Tugas
-Navbar+herosection : triyasniko
+-Navbar+herosection : triyasniko
 ---
-Video section : boby
+-Video section : boby
 ---
-Services section : dimas
+-Services section : dimas
 ---
-Our project section + contact + footer : awal
+-Our project section + contact + footer : awal
