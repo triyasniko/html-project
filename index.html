@@ -5,11 +5,19 @@
   <title>Envel Agency</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    *{
+      margin:0;
+      padding:0;
+      font-family: 'Nunito Sans', sans-serif;
+    }
     #header-nav,
     #hero-section {
       background-color: #19191B;
@@ -18,6 +26,22 @@
       background-color: #5454D4 !important;
       border:none;
     }
+    .btn-outline-secondary{
+      background-color: none;
+      color: #fff;
+      border:1px solid #fff;
+    }
+    .navbar-nav .nav-link{
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+    .nav-link.active{
+      color:#5454D4 !important;
+    }
+    .hero-text-content{
+      color : rgba(255, 255, 255, 0.7);
+      line-height: 39px;
+    }
+
   </style>
 
 </head>
@@ -26,24 +50,24 @@
   
   <!-- navbar-->
 
-  <nav id="header-nav" class="navbar navbar-light navbar-expand-md fixed-top">
+  <nav id="header-nav" class="navbar navbar-light navbar-expand-md fixed-top ">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <img src="assets/logo.png">
+        <img src="image/logo.png">
       </a>
       <button type="button" data-toggle="collapse" data-target="#collapseNav" aria-controls="collapseNav"
         aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div id="collapseNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
           <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="#our-project" class="nav-link">Our Project</a></li>
           <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
         </ul>
         <div class="">
-          <a href="#" class="btn btn-outline-primary">Contact us</a>
+          <a href="#" class="btn btn-outline-secondary">Contact us</a>
         </div>
       </div>
     </div>
@@ -54,8 +78,8 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5">
-          <h1 class="display-5 font-weight-bolder text-white">Build Your Awesome Platform</h1>
-          <p class="my-4 text-white">
+          <h1 class="display-5 font-weight-bolder text-white">Build <br>Your Awesome Platform</h1>
+          <p class="hero-text-content my-4">
             Enver studio is a digital studio that offers several services szuch as UI/UX Design to developers,
             we will provide the best service for those of you who use our services.</p>
 
@@ -65,16 +89,17 @@
             </button>
         </div>
         <div class="col-lg-6 offset-lg-1 p-0 overflow-hidden">
-          <img class="img-fluid" src="assets/img-hero-section.png">
+          <img class="img-fluid" src="image/img-hero-section.png">
         </div>
       </div>
     </div>
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
